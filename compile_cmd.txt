@@ -1,0 +1,5 @@
+https://trac.ffmpeg.org/wiki/CompilationGuide/MSVC
+windows 64 VS2017
+in msys.bat add one line 
+call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Auxiliary\Build\vcvars64.bat"
+./configure --enable-shared --target-os=win64 --arch=x86_64 --toolchain=msvc --prefix=./output_libs
